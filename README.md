@@ -12,3 +12,5 @@ $ meteor add quackware:bootstrap-calendar
 
 To use
 ------
+
+See https://github.com/Serhioromano/bootstrap-calendar
