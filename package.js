@@ -2,9 +2,9 @@ Package.describe({
   name: 'quackware:bootstrap-calendar',
   version: '0.0.1',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'Bootstrap calendar from @Serhioromano, packaged for Meteor.js',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'https://www.github.com/quackware/meteor-bootstrap-calendar',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'
@@ -12,11 +12,11 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
-  api.addFiles('bootstrap-calendar.js');
-});
+  api.use("jquery", "client");
+  api.use("underscore", "client");
 
-Package.onTest(function(api) {
-  api.use('tinytest');
-  api.use('quackware:bootstrap-calendar');
-  api.addFiles('bootstrap-calendar-tests.js');
+  api.addFiles([
+    "lib/css/calendar.css",
+    "lib/js/calendar.js"
+  ], "client");
 });
