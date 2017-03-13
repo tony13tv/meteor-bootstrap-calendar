@@ -1,6 +1,6 @@
 Package.describe({
   name: 'tony13tv:bootstrap-calendar',
-  version: '0.0.6',
+  version: '0.0.7',
   // Brief, one-line summary of the package.
   summary: 'Bootstrap calendar from @Serhioromano, packaged for Meteor.js',
   // URL to the Git repository containing the source code for this package.
@@ -22,7 +22,6 @@ Package.onUse(function(api) {
 
   api.addAssets([
     "lib/tmpls/day.html",
-    "lib/tmpls/week.html",
     "lib/tmpls/events-list.html",
     "lib/tmpls/modal.html",
     "lib/tmpls/month-day.html",
