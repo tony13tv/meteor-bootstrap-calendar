@@ -7,7 +7,7 @@ To install
 ----------
 
 ```sh
-$ meteor add quackware:bootstrap-calendar
+$ meteor add tony13tv:bootstrap-calendar
 ```
 
 To use
